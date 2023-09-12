@@ -42,7 +42,7 @@ Read from snapshots, mutate the source.
 You can subscribe to some proxies and create a derived proxy.
 
 ```ts
-import { derive } from 'sveltejs-valtio/utils';
+import { derive } from 'sveltejs-valtio';
 
 // create a base proxy
 const state = proxy({
@@ -71,7 +71,7 @@ You can define own computed properties within a proxy. By combining with a memoi
 
 ```ts
 import memoize from 'proxy-memoize';
-import { proxyWithComputed } from 'sveltejs-valtio/utils';
+import { proxyWithComputed } from 'sveltejs-valtio';
 
 const state = proxyWithComputed(
   {
@@ -115,7 +115,7 @@ const state = proxyWithComputed(
 This is a utility function to create a proxy with snapshot history.
 
 ```ts
-import { proxyWithHistory } from 'sveltejs-valtio/utils';
+import { proxyWithHistory } from 'sveltejs-valtio';
 
 const state = proxyWithHistory({ count: 0 });
 console.log(state.value); // ---> { count: 0 }
