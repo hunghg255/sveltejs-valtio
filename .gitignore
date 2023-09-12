@@ -1,0 +1,11 @@
+node_modules
+/lib
+/demo
+
+
+# docz
+.docz
+
+.nyc_output
+coverage
+*.lcov
