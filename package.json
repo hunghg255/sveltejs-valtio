@@ -1,6 +1,6 @@
 {
   "name": "sveltejs-valtio",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "sveltejs valtio",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
